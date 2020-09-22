@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TARPA TECNOZIANT CORP - HOME</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: "Quicksand", sans-serif;
+              background: url(../images/bg.png) left top repeat;
+            }
+
+            a {
+              outline: none;
+            }
+
+            .banner-bg {
+              background-color: rgb(83, 222, 191);
+            }
+
+            .text-primary {
+              color: rgb(83, 222, 191) !important;
+            }
+
+            .text-black {
+              color: #000000;
+            }
+
+            .text-white {
+              color: #ffffff;
+            }
+
+            .dark-bg {
+              background-color: #000000;
+            }
+
+            .font-weight-normal {
+              font-weight: 400;
+            }
+
+            #navId li a {
+              color: #6c757d;
+            }
+
+            #navId li a.active {
+              color: #000000;
+              font-weight: 700;
+            }
+
+            .banner-text-block {
+              padding: 0 4em;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+
+            .banner-text-block h1 {
+              font-family: "Mulish", sans-serif;
+              font-size: 44px;
+            }
+
+            .about-border {
+              width: 100px;
+              height: 3px;
+              background: #000000;
+              margin: 20px auto;
+            }
+
+            .extra-space {
+              margin-top: 4em;
+              margin-bottom: 4em;
+            }
+
+            /* separator style */
+
+            .separator-line {
+              width: 100%;
+              height: 1px;
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            /* Coming Soon Page Style */
+
+            #comingSoon .coming-soon-text-block {
+              position: relative;
+            }
+
+            .coming-soon-text {
+              position: absolute;
+              right: 0;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(0, -50%);
+            }
+
+            .logo-text {
+              font-weight: 700;
+              font-size: 48px;
+              color: rgb(83, 222, 191);
+              text-transform: uppercase;
+            }
+
+            /* Modal form style */
+
+            .custom-file-input,
+            .custom-file-label,
+            .custom-file-input:lang(en) ~ .custom-file-label::after {
+              height: 62px;
+              line-height: 46px;
+            }
+
+            .custom-file-input:lang(en) ~ .custom-file-label::after {
+              line-height: 44px;
+              background-color: rgb(83, 222, 191);
+              color: #ffffff;
+              font-weight: 700;
+            }
+
+            .custom-file-label {
+              left: 13px;
+              top: 32px;
+              width: 95%;
+            }
+
+            .list-group-item {
+              background-color: transparent;
+            }
+
+            .list-group-item.active {
+              background-color: transparent;
+            }
+
+            #navId ul li.list-group-item.active a {
+              color: #000000;
+              font-weight: 700;
+            }
+
+            html { background-color: #f0f3f4; }
+      body, html {
+          min-height: 100%;
+          position: relative;
+      }
+      body {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          color: #666666;
+          font-weight:500;
+          -webkit-font-smoothing: antialiased;
+          line-height: 1.53846154;
+          background: url("../images/bedge_grunge_light.jpg") repeat;
+      }
+      :focus { outline: 0 none !important; }
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: 600;
+          color:#272727
+      }
+      h1 { font-size: 30px; }
+      h2 { font-size: 24px; }
+      h3 { font-size: 16px; }
+      h4 { font-size: 14px; }
+      h5 { font-size: 12px; }
+      h6 { font-size: 10px; }
+      h3, h4, h5 {
+          margin-top: 5px;
+          font-weight: 600;
+      }
+      p, blockquote { margin: 20px 0; }
+      strong { font-weight: 600; }
+      a {
+          color: #363f44;
+          cursor: pointer;
+          -webkit-transition: All 0.5s ease;
+          -moz-transition: All 0.5s ease;
+          -ms-transition: All 0.5s ease;
+          -o-transition: All 0.5s ease;
+          transition: All 0.5s ease;
+          text-decoration: none;
+      }
+      a:hover, a:focus {
+          color: #141719;
+          text-decoration: none !important;
+      }
+      label { font-weight: normal; }
+      small, .small { font-size: 13px; }
+      ul { padding-left:0; }
+      .container { max-width: 1000px; }
+      /* Header */
+      .navbar {
+          border-radous:0;
+          border:0;
+          margin:0;
+      }
+      .header-inner {
+          width: 100%;
+          position: reltive;
+          z-index: 999;
+          background-color: #fff;
+          -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.06);
+          -webkit-transform: translate3d(0, 0, 0);
+          -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          -webkit-transition: a;
+          ;
+      2s; /* For Safari 3.1 to 6.0 */
+          transition: all 2s;
+      }
+      .top-line {
+          padding: 10px 0;
+          background: #666;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          overflow: hidden;
+      }
+      .top-line p, .top-line a {
+          color: #ffffff;
+          margin: 0;
+      }
+      .top-line p span { margin-right: 20px; }
+      .top-line p span i {
+          font-size: 13px;
+          color:#fff;
+          margin-right: 10px;
+      }
+      .top-line ul.social-icons {
+          margin: 0;
+          padding: 0;
+          text-align: right;
+      }
+      .top-line ul.social-icons li {
+          display: inline-block;
+          margin-left: 9px;
+      }
+      .top-line ul.social-icons li a {
+          display: inline-block;
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          font-size: 14px;
+          color: #ffffff;
+      }
+      .top-line ul.social-icons li a:hover { color: #ffba00; }
+      header.active .top-line {
+          height: 0;
+          padding: 0;
+      }
+      /*** Brand logo ***/
+
+      .brand {
+          width: 200px;
+          height: 90px;
+      }
+      .brand a { display:block }
+      .brand, .header-inner .main-nav {
+          display: table-cell;
+          vertical-align: middle;
+      }
+      /*** Main Nav Menu ***/
+      .main-nav {
+          text-align: right;
+          white-space: nowrap;
+          padding: 0 0 0 30px;
+          width:100%;
+      }
+      .sf-menu, .sf-menu * {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+      .main-nav .sf-menu li { position: relative; }
+      .main-nav .sf-menu li:hover, .sf-menu li.sfHover {
+          -webkit-transition: none;
+          transition: none;
+      }
+      .main-nav .sf-menu li a {
+          color: #666;
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 90px;
+          padding: 0 15px;
+          position: relative;
+          text-transform: capitalize;
+      }
+      .main-nav .sf-menu li.current a { color: #424E75; }
+      .main-nav .sf-menu li.current ul a { color: #424E75; }
+      .main-nav .sf-menu li ul li.current a { color: #424E75; }
+      .main-nav .sf-menu ul {
+          background-color: #fff;
+          position: absolute;
+          z-index: 6000;
+          display: none;
+          min-width: 12em; /* allow long menu items to determine submenu width */
+       *width: 12em; /* no auto sub width for IE7, see white-space comment below */
+          top: 99%;
+          left: 0;
+          z-index: 99;
+          margin: 1px 0;
+          padding: 0;
+          border-top: solid 2px #c44741;
+          background-color: #fff;
+          -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+      }
+      .main-nav .sf-menu > li { display: inline-block; }
+      .main-nav .sf-menu li:hover > ul, .main-nav .sf-menu li.sfHover > ul { display: block; }
+      .main-nav .sf-menu a {
+          display: block;
+          position: relative;
+      }
+      .main-nav .sf-menu a:hover { color: #c44741; }
+      .main-nav .sf-menu ul li {
+          width: 180px;
+          background: #fff;
+          text-align: left;
+          border-left: solid 1px #ddd;
+          border-right: solid 1px #ddd;
+          border-bottom: solid 1px #ddd;
+      }
+      .main-nav .sf-menu ul li a {
+          padding: 10px 15px;
+          font-size: 13px;
+      }
+      .main-nav .sf-menu ul ul {
+          top: 0;
+          left: 100%;
+      }
+      .main-nav .sf-menu ul ul li {
+          background: #fff;
+          border-left: solid 1px #eee;
+      }
+      /*** arrows (for all except IE7) **/
+      .sf-arrows .sf-with-ul { padding-right: 2.5em; *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+      }
+      .sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after { border-top-color: white; /* IE8 fallback colour */ }
+      .sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after { border-left-color: #999; }
+      .header-inner #toggle-btn {
+          cursor: pointer;
+          font-size: 17px;
+          height: 45px;
+          line-height: 45px;
+          position: absolute;
+          right: 15px;
+          text-align: center;
+          top: 20px;
+          width: 45px;
+      }
+      .header-inner .toggle-subarrow { display: none; }
+       @media (min-width: 768px) {
+       .header-inner #toggle-btn {
+       display: none;
+      }
+      }
+       @media (max-width: 768px) {
+       .navbar-brand {
+       display: block;
+      }
+       .navbar {
+       max-height: none;
+      }
+      .main-nav {
+       margin-top: 10px;
+       height: auto;
+      }
+      .sf-menu > li {
+       float: none;
+      }
+      .sf-menu li a {
+       padding: 10px 13px;
+       font-weight: 400;
+      }
+       .sf-menu li a:hover, .sf-menu li.sfHover a:hover {
+       color: #c44741;
+      }
+       .sf-menu ul {
+       font-size: 14px;
+       display: block;
+       position: static !important;
+       border: 0;
+       box-shadow: 0 0 0 0;
+       -moz-box-shadow: 0 0 0 0;
+       -webkit-box-shadow: 0 0 0 0;
+      }
+      }
+       @media only screen and (max-width: 768px) {
+       .header-inner .main-nav {
+       display: block;
+       margin: 0;
+      }
+       #toggle-btn {
+       display: block;
+      }
+       .toggle-subarrow {
+       display: block !important;
+       cursor: pointer;
+       position: absolute;
+       right: 0;
+       top: 0;
+       width: 45px;
+       height: 42px;
+       border-left: 1px solid #e8e8e8;
+       text-align: center;
+       color: #777;
+      }
+       .toggle-subarrow .fa {
+       margin-top:14px;
+      }
+       .main-nav {
+       text-align: left;
+       white-space: nowrap;
+       padding: 0;
+      }
+       .sf-menu {
+       display: none;
+      }
+       .main-nav .sf-menu {
+       margin: 0 -15px;
+      }
+       .main-nav .sf-menu > li {
+       font-size: 13px;
+       line-height: 16px;
+       display: block;
+       border-top: 1px solid #F96
+      }
+       .main-nav .sf-menu li a {
+       color: #fff;
+       padding: 20px;
+       line-height:0px;
+       display: block;
+       position: relative;
+       background-color:#08991C;
+       text-align:center
+      }
+       .main-nav .sf-menu ul {
+      border: none;
+      }
+       .main-nav .sf-menu ul li {
+       width: 100%;
+       margin-left: 30px;
+       font-size: 13px;
+       line-height: 16px;
+       font-weight: 400;
+       position: relative;
+       border:none;
+       border-top: 1px solid #e8e8e8;
+      }
+       .sf-menu ul {
+       position:static!important;
+       display: none!important;
+      }
+       .mob-drop ul {
+       display: block!important;
+      }
+         @media(min-width: 601px) and (max-width: 780px) {
+      .top-line .container {
+       max-width:70%;
+      }
+       .top-line p span {
+       display: table;
+       margin-right: 20px;
+       text-align: left;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <header>
+      <div class="container mt-4 mb-4">
+        <div class="row">
+          <div data-spy="scroll" data-target="#navId" class="mx-auto">
+            <div id="navId">
+              <ul
+                class="py-1 mb-2 list-group list-group-horizontal"
+                role="tablist"
+              >
+                <li class="list-group-item bg-transparent border-0 active">
+                  <a href="index.html" class="text-decoration-none">HOME</a>
+                </li>
+                <li class="list-group-item bg-transparent border-0">
+                  <a href="services.html" class="text-decoration-none"
+                    >SERVICES</a
+                  >
+                </li>
+                <li class="list-group-item bg-transparent border-0">
+                  <a href="contact-us.html" class="text-decoration-none"
+                    >CONTACT US</a
+                  >
+                </li>
+                <li class="list-group-item bg-transparent border-0">
+                  <a href="reviews.html" class="text-decoration-none"
+                    >REVIEWS</a
+                  >
+                </li>
+                <li class="list-group-item bg-transparent border-0">
+                  <a href="blog.html" class="text-decoration-none">BLOG</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <header class="site-header">
+      <nav class="navbar navbar-default">
+        <div class="header-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="brand">
+                  <a href="index.html">
+                    <h1>Tecnoziant</h1>
+                  </a>
+                </div>
+                <nav id="nav-wrap" class="main-nav">
+                  <a id="toggle-btn" href=""><i class="fa fa-bars"></i> </a>
+                  <ul class="sf-menu">
+                    <li><a href="index.html">HOME</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="requirements">
+      <div class="container">
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  We are an established, innovative, service-oriented IT
+                  recruiting and payroll Management Company is actively seeking
+                  a Chief Operating Officer (COO) to lead its operation in
+                  Canada. This is a challenging and rewarding opportunity for a
+                  self-motivated individual who can lead, supervise and control
+                  all strategic and business aspects of our Company in Canada.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p>
+                  The COO’s mandate is to bring the leadership and discipline
+                  that enables formation of a team and getting the team to do
+                  their best work. To support them achieve high levels of
+                  customer satisfaction while delivering on operational and
+                  financial objectives and metrics.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p>
+                  We are looking for an inspiring, solutions-based team player
+                  with solid operational experience.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p>
+                  <strong>Terms of Employment: </strong>Full Time, Permanent
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p>
+                  <strong>Salary: </strong>C$50 – C$55 per hour (Depending on
+                  experience) (or) between 104,000 CAD – 114,400 Per Annum.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <p><strong>Hours: </strong>40 hours per week.</p>
+                <div>
+                  <div class="col-sm-12">
+                    <p><strong>Other benefits: </strong></p>
+                    <ul>
+                      <li>
+                        Overtime benefits will be paid after 40 hours/week
+                      </li>
+                      <li>4% vacation pay will be paid.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <p>
+                      <strong>Language: </strong>English is the primary language
+                      at the workplace.
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p><strong>NOC Group: </strong>0015</p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p><strong>Start Date:</strong></p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p><strong>Job Duties: </strong></p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p>
+                      Chief operating officer will be performing the following
+                      job duties:
+                    </p>
+                  </div>
+                  <div class="col-sm-12">
+                    <ul>
+                      <li>
+                        Understand, articulate and live the shared Vision of the
+                        Company’s shareholders and Directors as you build a team
+                        of leaders and staff-up critical departments.
+                      </li>
+                      <li>
+                        Follow and manage North American market growth
+                        strategies
+                      </li>
+                      <li>
+                        Develop high-quality business strategies to establish
+                        required departments and allocate human resources to
+                        implement organizational policies.
+                      </li>
+                      <li>
+                        Oversee the activities of HR in building a strong
+                        operational team and to recruit and retain talented
+                        technical and non-technical groups.
+                      </li>
+                      <li>
+                        Develop and execute the financial plans to meet the
+                        strategic and administrative goals;
+                      </li>
+                      <li>
+                        Research, plan and authorize necessary promotional
+                        activities;
+                      </li>
+                      <li>
+                        Co-ordinate the work with global teams across USA India,
+                        Singapore, Europe for regional employee engagement
+                        Collaborate with key investors and managing the
+                        reporting requirements.
+                      </li>
+                      <li>
+                        Develop and implement an operating model for the new
+                        structure
+                      </li>
+                      <li>
+                        Maintain a periodical rolling forecast of revenues and
+                        expenses for the business that includes quarterly and
+                        annual reports
+                      </li>
+                      <li>
+                        Develop key metrics and oversee the production of
+                        financial and non-financial reports that provide
+                        actionable data
+                      </li>
+                      <li>
+                        Develop and Oversee business development and marketing
+                        initiatives, building relationships with partners and
+                        clients.
+                      </li>
+                      <li>
+                        Provide sales assistance with RFP responses and onsite
+                        presentations
+                      </li>
+                      <li>
+                        Coach and mentor direct reports and others, building the
+                        leadership team.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <p>Additional Skills:</p>
+                    <ul>
+                      <li>Ability to manage a minimum of 10 people.</li>
+                      <li>
+                        Experience and familiarity to handle ERP systems.
+                        Working experience in Oracle PeopleSoft can be preferred
+                      </li>
+                      <li>
+                        The ideal candidate will have a strong operations and HR
+                        background with proven business acumen and strong
+                        organizational skills
+                      </li>
+                      <li>
+                        Proficient in MS Office, especially Outlook, Word,
+                        Excel, and PowerPoint;
+                      </li>
+                      <li>
+                        Excellent organizational and interpersonal skills;
+                      </li>
+                      <li>Excellent verbal and written communication skills</li>
+                      <li>
+                        Ability to work within established deadlines, extreme
+                        time constraints and to handle situations with tact and
+                        diplomacy;
+                      </li>
+                      <li>
+                        Ability to work with a high degree of accuracy and
+                        attention to detail;
+                      </li>
+                      <li>Problem-solving and excellent decision making</li>
+                      <li>
+                        Accountability, strong planning processes, operational
+                        efficiency and financial discipline are required for
+                        this position.
+                      </li>
+                      <li>
+                        Establishes & maintains good working relationships with
+                        all levels of the Company & clients
+                      </li>
+                      <li>Willing to travel if required</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12">
+                    <p>Please Note:</p>
+                    <ul>
+                      <li>
+                        Persons who do not have the legal right to work in
+                        Canada need not apply.
+                      </li>
+                      <li>
+                        If you feel that you fit for the above requirements and
+                        ability to lead the operations in Canada, Please email
+                        your recent resume to recruitment.tarpa@gmail.com
+                      </li>
+                      <li>Website: https://tecnoziant.net/</li>
+                    </ul>
+                  </div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <h3 id="postrequirements">Post your requirements</h3>
+                    <form
+                      enctype="multipart/form-data"
+                      method="post"
+                      action="http://128.199.21.85/submitResume"
+                    >
+                      <div class="col-md-12 p-0">
+                        <div class="row">
+                          <input
+                            type="hidden"
+                            name="_token"
+                            value="lTcAAnlCegNa4VbY8VNdhgBVORtKlPthLRgjEbwF"
+                          />
+                          <div class="col-sm-12 form-group">
+                            <label>Name</label>
+                            <input
+                              class="form-control"
+                              id="name"
+                              name="name"
+                              placeholder="Name"
+                              type="text"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 form-group">
+                            <label>Email</label>
+                            <input
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              placeholder="Email"
+                              type="email"
+                              required=""
+                            />
+                          </div>
+                          <div class="col-sm-6 form-group">
+                            <label>Mobile</label>
+                            <input
+                              class="form-control"
+                              id="name"
+                              name="mobile"
+                              placeholder="Mobile"
+                              type="text"
+                              required=""
+                            />
+                          </div>
+                          <div class="col-sm-12 form-group">
+                            <label>Message</label>
+                            <textarea
+                              class="form-control"
+                              id="email"
+                              name="message"
+                              placeholder="Message"
+                              type="file"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <button
+                              class="btn banner-bg btn-block text-white font-weight-bold"
+                              type="submit"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <h3 id="uploadresume">Upload Your Resume</h3>
+                    <form
+                      enctype="multipart/form-data"
+                      method="post"
+                      action="http://128.199.21.85/submitResume"
+                    >
+                      <div class="col-md-12 p-0">
+                        <div class="row">
+                          <input
+                            type="hidden"
+                            name="_token"
+                            value="lTcAAnlCegNa4VbY8VNdhgBVORtKlPthLRgjEbwF"
+                          />
+                          <div class="col-sm-12 form-group">
+                            <label>Name</label>
+                            <input
+                              class="form-control"
+                              id="name"
+                              name="name"
+                              placeholder="Name"
+                              type="text"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 form-group">
+                            <label>Email</label>
+                            <input
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              placeholder="Email"
+                              type="email"
+                              required=""
+                            />
+                          </div>
+                          <div class="col-sm-6 form-group">
+                            <label>Mobile</label>
+                            <input
+                              class="form-control"
+                              id="name"
+                              name="mobile"
+                              placeholder="Mobile"
+                              type="text"
+                              required=""
+                            />
+                          </div>
+                          <div class="col-sm-12 form-group">
+                            <!-- <label>Resume</label>
+                                <input class="form-control" id="email" name="resume" placeholder="resume" type="file"
+                                  required=""> -->
+                            <input
+                              class="form-control custom-file-input"
+                              id="email"
+                              name="resume"
+                              type="file"
+                            />
+                            <label class="custom-file-label" for="resume"
+                              >Choose file</label
+                            >
+                          </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div
+                            class="col-md-12 form-group"
+                            style="padding-top: 2em"
+                          >
+                            <button
+                              class="btn banner-bg btn-block text-white font-weight-bold"
+                              type="submit"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
