@@ -5562,7 +5562,7 @@ p .alignnone:last-child {
 
 .page-mobile-main-menu .menu__container {
   padding: 0;
-  margin: 20px 30px 100px;
+  margin: 0px 30px 100px;
 }
 
 .page-mobile-main-menu .menu__container > li > a {
