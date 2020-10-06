@@ -855,7 +855,7 @@
       select:focus,
       select:focus,
       textarea:focus {
-        color: rgb(83, 222, 191);
+        color: #000000;
         border-color: rgb(83, 222, 191);
         background-color: #f5f5f5;
       }
@@ -2209,6 +2209,18 @@
       #our-clients .image img {
         background-color: #ffffff;
         border: none;
+      }
+
+      .small-input {
+        -moz-appearance: textfield;
+      }
+      .small-input::-webkit-inner-spin-button {
+        display: none;
+      }
+      .small-input::-webkit-outer-spin-button,
+      .small-input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
       }
       @media (max-width: 1199px) {
         .page-title-bar-01 .page-title-bar-inner {
@@ -3738,12 +3750,14 @@
                               </div>
                               <div class="form-group" style="padding-top: 2em">
                                 <input
-                                  class="form-control"
+                                  class="form-control small-input"
                                   id="name"
                                   name="mobile"
                                   placeholder="Mobile"
-                                  type="text"
                                   required=""
+                                  type="number"
+                                  pattern="/^-?\d+\.?\d*$/"
+                                  onKeyPress="if(this.value.length==10) return false;"
                                 />
                               </div>
                               <div class="form-group" style="padding-top: 2em">
